@@ -2,4 +2,6 @@ Hola mundo
 
 Soy un archivo de texto plano con terminacion .txt
 
+además no tengo nada que contar
+
 jijijijá
