@@ -15,11 +15,11 @@
 
 ```bash
 #commit bc6c8b6c2e4c454b239dd3c6ad73849e2cf683a0 (HEAD -> master)
-#Author: Julian Riveros <juliancamilorifo@ufps.edu.co>
+#Author: Julian Riveros
 #Date:   Sun Jan 16 19:05:16 2022 -0500
 #    Se especifica mas la informacion del documento
 #commit 1c202f564af7906fe74bbe665370c60fb7e3136e
-#Author: Julian Riveros <juliancamilorifo@ufps.edu.co>
+#Author: Julian Riveros 
 #Date:   Sun Jan 16 19:01:40 2022 -0500
 #    Primer commit: se crea el archivo .txt llamado hola mundo y un contenido aleatorio
 #vamos a comparar la primera version con la ultima
