@@ -32,15 +32,16 @@ git diff 1c202f564af7906fe74bbe665370c60fb7e3136e bc6c8b6c2e4c454b239dd3c6ad7384
 ---
 El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas (la rama donde nos encontramos cuando ejecutamos el comando y la rama que indiquemos después del comando).
 
-# Crear un nuevo commit en la rama master combinando
-# los cambios de la rama cabecera:
-git checkout master
+- Crear un nuevo commit en la rama master combinandolos cambios de la rama cabecera:
+```bash
+git checkout main
 git merge cabecera
-
-# Crear un nuevo commit en la rama cabecera combinando
-# los cambios de cualquier otra rama:
+```
+- Crear un nuevo commit en la rama cabecera combinando los cambios de cualquier otra rama:
+```bash
 git checkout cabecera
 git merge cualquier-otra-rama
+```
 Asombroso, ¿verdad? Es como si Git tuviera super poderes para saber qué cambios queremos conservar de una rama y qué otros de la otra. El problema es que no siempre puede adivinar, sobretodo en algunos casos donde dos ramas tienen actualizaciones diferentes en ciertas líneas en los archivos. Esto lo conocemos como un conflicto y aprenderemos a solucionarlos en la siguiente clase.
 
 Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit puedes perder el trabajo que no hayas guardado. Guarda tus cambios antes de hacer git checkout.
