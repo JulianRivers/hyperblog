@@ -28,4 +28,21 @@ git diff 1c202f564af7906fe74bbe665370c60fb7e3136e bc6c8b6c2e4c454b239dd3c6ad7384
 - El comando **git checkout + ID del commit** nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
 - para volver a una versión anterior y además borrar todos los cambios que se han hecho se usa **git reset ID del commit** Hay dos formas de usar `git reset`: con el argumento `--hard`, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). O, un poco más seguro, con el argumento `--soft`, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
 - `git checkout master archivo` ese es el archivo que desea volver a la version mas actual si desea volver todos e usa un .  
--para enviar al repositorio remoto `git push origin main`
+- para enviar al repositorio remoto `git push origin main`
+---
+El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas (la rama donde nos encontramos cuando ejecutamos el comando y la rama que indiquemos después del comando).
+
+# Crear un nuevo commit en la rama master combinando
+# los cambios de la rama cabecera:
+git checkout master
+git merge cabecera
+
+# Crear un nuevo commit en la rama cabecera combinando
+# los cambios de cualquier otra rama:
+git checkout cabecera
+git merge cualquier-otra-rama
+Asombroso, ¿verdad? Es como si Git tuviera super poderes para saber qué cambios queremos conservar de una rama y qué otros de la otra. El problema es que no siempre puede adivinar, sobretodo en algunos casos donde dos ramas tienen actualizaciones diferentes en ciertas líneas en los archivos. Esto lo conocemos como un conflicto y aprenderemos a solucionarlos en la siguiente clase.
+
+Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit puedes perder el trabajo que no hayas guardado. Guarda tus cambios antes de hacer git checkout.
+- para ver todos las urls de los repositorios remotos `git remote -v`
+- para cambiar esa url se `git remote set-url name-repo-remote new-url`
