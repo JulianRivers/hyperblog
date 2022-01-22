@@ -1,4 +1,5 @@
-# Comandos
+# Apuntes Curso Git y Github de platzi
+## Comandos
 
 - inicializar el repositorio `git init`
 - Agregar el archivo al repositorio `git add nombre_de_archivo.extencion`
