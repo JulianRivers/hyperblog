@@ -26,11 +26,14 @@
 #vamos a comparar la primera version con la ultima
 git diff 1c202f564af7906fe74bbe665370c60fb7e3136e bc6c8b6c2e4c454b239dd3c6ad73849e2cf683a0
 ```
+---
+## viajes en el tiempo
 - El comando **git checkout + ID del commit** nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
 - para volver a una versión anterior y además borrar todos los cambios que se han hecho se usa **git reset ID del commit** Hay dos formas de usar `git reset`: con el argumento `--hard`, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). O, un poco más seguro, con el argumento `--soft`, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
 - `git checkout master archivo` ese es el archivo que desea volver a la version mas actual si desea volver todos e usa un .  
 - para enviar al repositorio remoto `git push origin main`
 ---
+## merge
 El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas (la rama donde nos encontramos cuando ejecutamos el comando y la rama que indiquemos después del comando).
 
 - Crear un nuevo commit en la rama master combinandolos cambios de la rama cabecera:
@@ -49,6 +52,7 @@ Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit p
 - para ver todos las urls de los repositorios remotos `git remote -v`
 - para cambiar esa url se `git remote set-url name-repo-remote new-url`
 ---
+## remote
 ```bash
 #Traer la versión del repositorio remoto y
 # hacer merge para crear un commit con los archivos
@@ -60,3 +64,8 @@ git pull origin master --allow-unrelated-histories
 # los cambios de nuestro repositorio local en GitHub:
 git push origin master
 ```
+---
+## tags
+- un tag es el nombre que se le puede dar a una version ejemplos: v0.1 2 v0.2.4
+- `git tag -a v0.1 -m "resultado de las primeras clases del curso" name-commit` ejemplo `git tag -a v0.1 -m "resultado de las primeras clases del curso" beca6ad`
+- para mostrar a que commit exacto están asignados los tag se usa `git show-ref --tags`
