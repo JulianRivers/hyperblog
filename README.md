@@ -47,3 +47,15 @@ Asombroso, ¿verdad? Es como si Git tuviera super poderes para saber qué cambio
 Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit puedes perder el trabajo que no hayas guardado. Guarda tus cambios antes de hacer git checkout.
 - para ver todos las urls de los repositorios remotos `git remote -v`
 - para cambiar esa url se `git remote set-url name-repo-remote new-url`
+---
+```bash
+#Traer la versión del repositorio remoto y
+# hacer merge para crear un commit con los archivos
+# de ambas partes. Podemos usar git fetch y git merge
+# o solo el git pull con el flag --allow-unrelated-histories:
+git pull origin master --allow-unrelated-histories
+
+# Por último, ahora sí podemos hacer git push para guardar
+# los cambios de nuestro repositorio local en GitHub:
+git push origin master
+```
