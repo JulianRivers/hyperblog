@@ -57,7 +57,7 @@ Recuerda que al ejecutar el comando git checkout para cambiar de rama o commit p
 - para ver todos las urls de los repositorios remotos `git remote -v`
 - para cambiar esa url se `git remote set-url name-repo-remote new-url`
 ---
-## remote
+## Remote
 ```bash
 #Traer la versión del repositorio remoto y
 # hacer merge para crear un commit con los archivos
@@ -68,9 +68,10 @@ git pull origin master --allow-unrelated-histories
 # Por último, ahora sí podemos hacer git push para guardar
 # los cambios de nuestro repositorio local en GitHub:
 git push origin master
+- para agregar una rama(branch) a github `git push -f name-remote name-branch` ejemplo: `git push -f origin cabecera`
 ```
 ---
-## tags
+## Tags
 - un tag es el nombre que se le puede dar a una version ejemplos: v0.1 2 v0.2.4
 - `git tag -a v0.1 -m "resultado de las primeras clases del curso" name-commit` ejemplo `git tag -a v0.1 -m "resultado de las primeras clases del curso" beca6ad`
 - para mostrar a que commit exacto están asignados los tag se usa `git show-ref --tags`
