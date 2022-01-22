@@ -33,7 +33,12 @@ git diff 1c202f564af7906fe74bbe665370c60fb7e3136e bc6c8b6c2e4c454b239dd3c6ad7384
 - `git checkout master archivo` ese es el archivo que desea volver a la version mas actual si desea volver todos e usa un .  
 - para enviar al repositorio remoto `git push origin main`
 ---
-## merge
+## Branch
+- para hacer una rama `git branch name`
+- para listar las ramas `git branch` se pueden usar parametros como `-v` para q sea mas especifico
+- para listar TODAS las ramas `git show-branch --all`
+---
+## Merge
 El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas (la rama donde nos encontramos cuando ejecutamos el comando y la rama que indiquemos después del comando).
 
 - Crear un nuevo commit en la rama master combinandolos cambios de la rama cabecera:
@@ -69,3 +74,5 @@ git push origin master
 - un tag es el nombre que se le puede dar a una version ejemplos: v0.1 2 v0.2.4
 - `git tag -a v0.1 -m "resultado de las primeras clases del curso" name-commit` ejemplo `git tag -a v0.1 -m "resultado de las primeras clases del curso" beca6ad`
 - para mostrar a que commit exacto están asignados los tag se usa `git show-ref --tags`
+- para eliminar un tag `git tag -d name-tag` pero si se subió a github no se borrará
+- para eliminar de github se debe hacer con una referencia interna de github: `git push origin :refs/tag/tag-para-borrar`
