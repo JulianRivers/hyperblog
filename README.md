@@ -143,3 +143,19 @@ Consideraciones:
 El cambio más reciente (al crear un stash) SIEMPRE recibe el valor 0 y los que estaban antes aumentan su valor.
 Al crear un stash tomará los archivos que han sido modificados y eliminados. Para que tome un archivo creado es necesario agregarlo al Staging Area con git add [nombre_archivo] con la intención de que git tenga un seguimiento de ese archivo, o también utilizando el comando git stash -u (que guardará en el stash los archivos que no estén en el staging).
 Al aplicar un stash este no se elimina, es buena práctica eliminarlo.
+
+---
+
+git grep color -->use la palabra color
+git grep la --> donde use la palabra la
+git grep -n color–> en que lineas use la palabra color
+git grep -n platzi --> en que lineas use la palabra platzi
+git grep -c la --> cuantas veces use la palabra la
+git grep -c paltzi --> cuantas veces use la palabra platzi
+git grep -c “<p>”–> cuantas veces use la etiqueta <p>
+
+git log-S “cabecera” --> cuantas veces use la palabra cabecera en
+todos los commits.
+
+grep–> para los archivos
+log --> para los commits.
