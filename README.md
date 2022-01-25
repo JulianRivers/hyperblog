@@ -27,6 +27,8 @@
 git diff 1c202f564af7906fe74bbe665370c60fb7e3136e bc6c8b6c2e4c454b239dd3c6ad73849e2cf683a0
 ```
 ---
+## Cambios en GitHub: de master a main
+- Si continuas con la rama master y tienes cambios puedes utilizar el siguiente comando: `git branch -M main`
 ## viajes en el tiempo
 - El comando **git checkout + ID del commit** nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
 - para volver a una versión anterior y además borrar todos los cambios que se han hecho se usa **git reset ID del commit** Hay dos formas de usar `git reset`: con el argumento `--hard`, borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre). O, un poco más seguro, con el argumento `--soft`, que mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
